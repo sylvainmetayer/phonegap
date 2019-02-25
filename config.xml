@@ -1,9 +1,7 @@
 <?xml version='1.0' encoding='utf-8'?>
 <widget id="com.phonegap.helloworld" version="1.0.0" xmlns="http://www.w3.org/ns/widgets" xmlns:gap="http://phonegap.com/ns/1.0">
-    <name>helloworld</name>
-    <description>
-        Hello World sample application that responds to the deviceready event.
-    </description>
+    <name>Track Position and Accelerometer</name>
+    <description>No description given</description>
     <author email="support@phonegap.com" href="http://phonegap.com">
         PhoneGap Team
     </author>
@@ -106,4 +104,5 @@
     <plugin name="cordova-plugin-geolocation" spec="~2.4.3" />
     <plugin name="cordova-plugin-battery-status" spec="~1.2.5" />
     <engine name="android" spec="7.1.4" />
+    <engine name="windows" spec="6.0.1" />
 </widget>

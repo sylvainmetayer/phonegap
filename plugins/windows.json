@@ -1,0 +1,49 @@
+{
+  "prepare_queue": {
+    "installed": [],
+    "uninstalled": []
+  },
+  "config_munge": {
+    "files": {}
+  },
+  "installed_plugins": {
+    "cordova-plugin-battery-status": {
+      "PACKAGE_NAME": "Track Position and Accelerometer"
+    },
+    "cordova-plugin-camera": {
+      "PACKAGE_NAME": "Track Position and Accelerometer"
+    },
+    "cordova-plugin-device": {
+      "PACKAGE_NAME": "Track Position and Accelerometer"
+    },
+    "cordova-plugin-dialogs": {
+      "PACKAGE_NAME": "Track Position and Accelerometer"
+    },
+    "cordova-plugin-geolocation": {
+      "PACKAGE_NAME": "Track Position and Accelerometer"
+    },
+    "cordova-plugin-globalization": {
+      "PACKAGE_NAME": "Track Position and Accelerometer"
+    },
+    "cordova-plugin-inappbrowser": {
+      "PACKAGE_NAME": "Track Position and Accelerometer"
+    },
+    "cordova-plugin-media-capture": {
+      "PACKAGE_NAME": "Track Position and Accelerometer"
+    },
+    "cordova-plugin-network-information": {
+      "PACKAGE_NAME": "Track Position and Accelerometer"
+    },
+    "cordova-plugin-vibration": {
+      "PACKAGE_NAME": "Track Position and Accelerometer"
+    }
+  },
+  "dependent_plugins": {
+    "cordova-plugin-compat": {
+      "PACKAGE_NAME": "Track Position and Accelerometer"
+    },
+    "cordova-plugin-file": {
+      "PACKAGE_NAME": "Track Position and Accelerometer"
+    }
+  }
+}
