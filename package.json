@@ -5,7 +5,12 @@
   "cordova": {
     "platforms": [
       "android"
-    ]
+    ],
+    "plugins": {
+      "cordova-plugin-vibration": {},
+      "cordova-plugin-geolocation": {},
+      "cordova-plugin-battery-status": {}
+    }
   },
   "dependencies": {
     "cordova-android": "7.1.4"
