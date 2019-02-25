@@ -47,7 +47,14 @@
         <h1>PhoneGap</h1>
         <div id="deviceready" class="blink">
             <p class="event listening">Connexion en cours...</p>
-            <p class="event received">L'application est prête !</p>
+            <p class="event received">Votre position actuelle est la suivante (déplacez-vous !) : 
+                <span id="position">None</span>
+
+                <br/>
+
+                Accéléromètre
+                <span id="accel">Pas de support accélération</span>
+            </p>
         </div>
     </div>
     <script type="text/javascript" src="cordova.js"></script>

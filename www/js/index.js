@@ -41,26 +41,39 @@ var app = {
         var listeningElement = parentElement.querySelector('.listening');
         var receivedElement = parentElement.querySelector('.received');
 
+        var positionElement = parentElement.querySelector("#position");
+        var accelElement = parentElement.querySelector("#accel");
+
         listeningElement.setAttribute('style', 'display:none;');
         receivedElement.setAttribute('style', 'display:block;');
 
-        var onSuccess = function (position) {
-            alert('Latitude: ' + position.coords.latitude + '\n' +
-                'Longitude: ' + position.coords.longitude + '\n' +
-                'Altitude: ' + position.coords.altitude + '\n' +
-                'Accuracy: ' + position.coords.accuracy + '\n' +
-                'Altitude Accuracy: ' + position.coords.altitudeAccuracy + '\n' +
-                'Heading: ' + position.coords.heading + '\n' +
-                'Speed: ' + position.coords.speed + '\n' +
-                'Timestamp: ' + position.timestamp + '\n');
+        function onSuccess(position) {
+            positionElement.innerHTML = 'Latitude: ' + position.coords.latitude + '<br/>' +
+                'Longitude: ' + position.coords.longitude + "<br/> Timestamp: " + position.timestamp + '\n';
         };
+
+        function processEvent(event) {
+            console.log(event);
+
+            var x = event.accelerationIncludingGravity.x, y = event.accelerationIncludingGravity.y, z = event.accelerationIncludingGravity.z;
+
+            accelElement.innerHTML = "x : " + x + "<br />";
+            accelElement.innerHTML += "y: " + y + "<br />";
+            accelElement.innerHTML += "z: " + z + "<br />";
+
+        }
 
         function onError(error) {
             alert('code: ' + error.code + '\n' +
                 'message: ' + error.message + '\n');
         }
 
-        navigator.geolocation.getCurrentPosition(onSuccess, onError);
+        navigator.geolocation.watchPosition(onSuccess, onError, { enableHighAccuracy: true, timeout: 30000 });
+
+        if (window.DeviceMotionEvent) {
+            window.addEventListener("devicemotion", processEvent, true);
+        }
+        
 
         console.log('Received Event: ' + id);
     }
