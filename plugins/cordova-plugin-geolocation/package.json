@@ -47,7 +47,7 @@
   "deprecated": false,
   "description": "Cordova Geolocation Plugin",
   "devDependencies": {
-    "jshint": "^2.6.0"
+    "jshint": "2.10.1"
   },
   "engines": {
     "cordovaDependencies": {
