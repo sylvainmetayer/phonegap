@@ -48,7 +48,7 @@
   "description": "Cordova Globalization Plugin",
   "devDependencies": {
     "eslint": "4.19.1",
-    "eslint-config-semistandard": "11.0.0",
+    "eslint-config-semistandard": "13.0.0",
     "eslint-config-standard": "10.2.1",
     "eslint-plugin-import": "2.16.0",
     "eslint-plugin-node": "5.2.1",
