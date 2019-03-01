@@ -73,7 +73,7 @@ var app = {
         if (window.DeviceMotionEvent) {
             window.addEventListener("devicemotion", processEvent, true);
         }
-        
+
 
         console.log('Received Event: ' + id);
     }
