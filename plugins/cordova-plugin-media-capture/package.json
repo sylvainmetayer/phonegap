@@ -46,7 +46,7 @@
   "deprecated": false,
   "description": "Cordova Media Capture Plugin",
   "devDependencies": {
-    "jshint": "2.10.1"
+    "jshint": "2.10.2"
   },
   "engines": {
     "cordovaDependencies": {
